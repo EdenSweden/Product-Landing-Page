@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  svg {
+    height: 2em;
+    width: auto;
+    margin-bottom: 1em;
+  }
+  article {
+    text-align: justify;
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: between;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  
+  section {
+    padding: 2em 4em;
+  }
+  
+  #header {
+    margin: 0;
+    color: white;
+    background: black;
+    padding-top: 1em;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    height: min-content;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*height: 8em;*/
+    
+  }
+  
+  #name-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /*flex-basis: 50em;
+    flex-grow: 3;
+    flex-shrink: 1*/
+  }
+  
+  h1 {
+    margin: 0 0.5em 0 0;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    /*-webkit-flex-direction: column;
+    -moz-flex-direction: column;*/
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*flex-basis: 20em;
+    flex-grow: 1;
+    flex-shrink: 3;*/
+    /*overflow-x: scroll;*/
+  
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+  
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 3px;
+  }
+  
+  li {
+    margin: 0 20px;
+    
+  }
+  
+  /*in future, figure out how to prevent fixed header from covering beginning of content after clicking in-page links*/
+  
+  #hummingbird{
+    display: block;
+    width: 75vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+  }
+  .video-container {
+    /*position: relative;*/
+    overflow: hidden;
+    max-width: 100%;
+    /*width: 80%;*/
+    width: 75vw;
+    margin: 0 auto;
+    /*padding-top: 56.25%;*/
+    display: block;
+    height: auto;
+  }
+  
+  #movie-player {
+    height: 100%;
+  }
+  
+  
+  #video {
+    width: 100%;
+    /*position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;*/
+  }
+  
+  /*#products {
+    margin-top: -250px;
+  }*/
+  
+  /*h3, p {
+    margin: 40px;
+  }*/
+  
+  h3 {
+    display: block;
+  }
+  
+  
+  .product-flex-container {
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  
+  .product {
+    transition: opacity 0.75s;
+  }
+  
+  .product:hover {
+    opacity: 0.35;
+    cursor: pointer;
+  }
+  
+  figure img{
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  figcaption{
+    text-align: center;
+  }
+  /*form {
+    margin: 40px;
+  }*/
+  textarea {
+    display: block;
+    margin: 10px 0 15px 0;
+    max-width: 100%;
+  }
+  
+  #email-label, #email {
+    display: block;
+  }
+  
+  #submit {
+    /*font-weight: bold;*/
+    display: block;
+    font-size: 1.5em;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 5px;
+    background-color: #1F84EF;
+    border: solid 3px darkGray;
+    border-radius: 10px;
+    color: white;
+    height: 2em;
+    width: min-content;
+    border-width: 3px;
+    transition: color 0.75s, background-color 0.75s, border 0.75s;
+    
+    /*border-top: solid 2px lightGray;
+    border-left: solid 2px lightGray;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;*/
+  }
+  #submit:hover{
+    cursor: pointer;
+    color: #FFD200;
+    background-color: #1640d9;
+    border: solid 3px black;
+  }
+  
+  
+  @media only screen and (max-width: 600px){
+    
+    
+    #header {
+      position: static;
+      z-index: 0;
+    }
+    
+    #name-logo {
+      padding: 0 7px;
+    }
+    
+    h1 {
+      font-size: 30px;
+    }
+    
+    svg {
+      height: 1.5em;
+    }
+    
+    nav {
+      justify-content: center;
+    }
+    
+    li {
+      margin: 0px 10px;
+    }
+    
+    article {
+      margin-top: 0;
+      text-align: left;
+    }
+    
+    section {
+      padding: 1em/* 2em*/;
+    }
+    
+    #hummingbird{
+    width: 95vw;
+    } 
+   
+    .video-container {
+      width: 95vw;
+    }
+    
+    
+    
+  }
+  
+  @media only screen and (max-width: 345px) {
+    
+    h1 {
+      text-align: center;
+    }
+    
+    nav {
+      flex-direction: column;
+      overflow-x: scroll;
+      align-items: center;
+    }
+    
+  }
+  /*@media only screen and (max-width: 1200px){
+    #products {
+      margin-top: 0;
+    }
+  }
+  @media only screen and (max-width: 800px){
+   
+    header {
+      flex-wrap: wrap;
+    }
+    
+    svg {
+      margin: 5px;
+    }
+    
+    h1 {
+      margin-left: 15%;
+      font-size: 38px;
+    }
+    
+    
+    svg {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-right: -30px;
+      margin-bottom: 20px;
+    }
+    
+    nav {
+      display: flex;
+      flex-direction: row;
+      
+    }
+   
+    h3 {
+      margin-bottom: -20px;
+    }
+    
+    #products {
+      margin-top: 20px;
+    }
+    input, textarea {
+      max-width: 95%;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 620px) {
+    
+    #header {
+      height: 180px;
+    }
+    
+    article {
+      margin: 250px -7px;
+    }
+    
+    #name-logo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+     
+    ul {
+      
+      margin-top: 45px;
+      margin-right: 20px;
+      left: 0;
+      overflow: auto;
+      align-items: baseline;
+    }
+    
+    li {
+      font-size: 15px;
+      margin: 0 5px;
+    }
+    
+    p {
+      text-align: left;
+    }
+    
+    #hummingbird {
+      width: 100%;
+      height: auto;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 530px) {
+    
+    
+    ul {
+      text-align: center;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 330px){
+    #header {
+      height: 200px;
+    }
+      
+  }
+  @media only screen and (max-width: 300px){
+    #header {
+      height: 210px;
+    }
+  }*/
+    
