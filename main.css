@@ -152,7 +152,7 @@ body {
   
   figure img{
     width: 200px;
-    height: auto;
+    height: 200px;
     border: 2px solid black;
     border-radius: 10px;
   }
